@@ -1,0 +1,121 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: url("/assets/images/background-image.png") repeat center center fixed;
+  min-height: 100vh !important;
+}
+
+/* Country card styling */
+
+.country-card-container {
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  background-color: #f3f3f3 !important;
+}
+
+.country-name {
+  font-size: 0.9rem;
+}
+
+.country-region {
+  font-size: 0.8rem;
+}
+
+.country-name,
+.country-region {
+  line-height: 1;
+}
+
+/* Form container styling */
+
+.form-container {
+  width: 40% !important;
+  margin: 8% auto;
+  padding: 4%;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* App buttons & links */
+
+button {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Users list page styling - list & buttons */
+
+.user:hover {
+  background: rgba(34, 34, 34, .1);
+}
+
+.user-list {
+  width: 520px;
+}
+
+.btn-container {
+  margin-left: 5%;
+  font-size: 14px;
+  display: none;
+}
+
+.user:hover .btn-container {
+  display: block;
+  float: right;
+}
+
+.user:hover .btn-container button {
+  margin: 0 5px;
+}
+
+.user p {
+  color: #6a6a6a;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* icon spacing */
+
+i {
+  margin-right: 10px
+}
+
+/* Responsive styling */
+
+@media (max-width: 1000px) {
+  .form-container {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .user:hover .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .user:hover .btn-container button {
+    margin: 2px 0;
+  }
+}

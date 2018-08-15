@@ -1,0 +1,41 @@
+{
+  "name": "react-flag-api-server",
+  "version": "1.0.0",
+  "description": "Authentication Server for React App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev:server": "nodemon index.js",
+    "lint": "eslint . --ext .js, .jsx",
+    "lint:fix": "eslint --fix . --ext .js, .jsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "10.7.0",
+    "npm": "6.3.0"
+  },
+  "keywords": [
+    "Node.js",
+    "MongoDB",
+    "Express",
+    "Authorization"
+  ],
+  "author": "Kafil Uddin",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-latest": "^1.0.7",
+    "nodemon": "^1.18.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "jwt-simple": "^0.5.1",
+    "mongoose": "^5.2.8",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  }
+}

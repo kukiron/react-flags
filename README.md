@@ -4,13 +4,15 @@ React+Redux app with user authentication, filtering & pagination.
 
 This app is using a **Node.js** api server set up with **MongoDB** database deployed on [Heroku](https://react-flags-api.herokuapp.com).
 
+## **[Demo](https://react-flags.herokuapp.com)**
+
 ## User Access
 
 Admin account - email: `admin@test.com`. password: `password`
 
-User accoung - email: `user@test.com`. password: `password`
+User account - email: `user@test.com`. password: `password`
 
-The list of users are visible for admins. You can use any account from the list to log in. All of them has same password: `password`
+The list of users are visible for admins. You can use any account from the list to log in. All of them have same password: `password`
 
 ## App Description
 

@@ -48,7 +48,8 @@ class UsersList extends PureComponent {
           itemsPerPage={5}
           pageRange={3}
           render={currentUsers => (
-            <div className="user-list my-2 mx-auto">
+            <div className="user-list my-0 mx-auto">
+              <h6 className="text-center py-2">Hover over the username to update/delete account</h6>
               <Error error={this.props.deleteErrorMsg} />
               <ul>
                 <UserInfo
